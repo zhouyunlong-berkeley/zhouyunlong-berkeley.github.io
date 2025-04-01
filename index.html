@@ -2,10 +2,86 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人网站</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #34495e;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin: 15px 0;
+        }
+        .education {
+            margin-top: 20px;
+        }
+        .education-item {
+            margin-bottom: 15px;
+        }
+        .education-item span {
+            font-weight: bold;
+            color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-    <h1>欢迎来到我的网站！</h1>
-    <p>这是一个简单的个人网站示例。</p>
+    <div class="container">
+        <h1>欢迎来到我的个人网站</h1>
+        
+        <h2>关于我</h2>
+        <p>在我来到伯克利以后，我开始重新审视我在复旦的学习。我认为最关键的是那些数学课程，如数学分析、线性代数（虽然我很晚才学）、概率论与数理统计（我有幸上了付中昊老师开的这门课）。另外和数学比较相关的计量经济学内容也对我收获很大，比如统计学、计量经济学H，截面与面板数据分析H。</p>
+        <p>形成我价值观的课有两门，一门是孙立坚老师的货币银行学，一门是王永钦老师的经济学前沿专题H，当然，我也认为这门课可以改名为金融经济学H。</p>
+        <p>来到伯克利以后，我主要将精力投入到了技术的建设上。我上了比较有名的 CS61B、CS61C，数据结构、计算机结构相关课程。数据结构方面，我还上了算法课程来加深我对数据结构的理解。在计算机结构方面，我上了操作系统这门课来培养我对计算机的一种感觉，包括并发、同步、调度。另外，我还上了两门课深入了目前热门的话题，由 Jonathan Shewchuk 开设的机器学习与 Anant Sahai 开设的神经网络。除此之外，我还略微涉及了区块链金融，对这些东西如何工作有一些独特的理解。</p>
+        <p>这些课能给我带来什么，目前是不得而知的。然而我保持着一颗对未来的探索之心。</p>
+
+        <h2>学习经历</h2>
+        <div class="education">
+            <div class="education-item">
+                <span>2021 - 2024</span>: 复旦大学经济学院<br>
+                主修经济学，深入学习数学、计量经济学及金融相关课程。
+            </div>
+            <div class="education-item">
+                <span>2024 - 2025</span>: 加州大学伯克利分校（UC Berkeley）访学<br>
+                专注于计算机科学，包括数据结构、算法、操作系统及机器学习。
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 我的个人网站</p>
+        </footer>
+    </div>
 </body>
 </html>
