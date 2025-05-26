@@ -1,107 +1,140 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        nav {
-            background-color: #2c3e50;
-            padding: 15px;
-            text-align: center;
-            border-radius: 8px 8px 0 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #3498db;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        h2 {
-            font-size: 1.5em;
-            color: #34495e;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        p {
-            font-size: 1.1em;
-            color: #555;
-            margin: 15px 0;
-        }
-        .education {
-            margin-top: 20px;
-        }
-        .education-item {
-            margin-bottom: 15px;
-        }
-        .education-item span {
-            font-weight: bold;
-            color: #2980b9;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #777;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yunlong Zhou | 个人主页</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+      background-color: #f9f9f9;
+      color: #1d1d1f;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 2rem;
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #bbb;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0a84ff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      color: #333;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: #555;
+      text-align: left;
+    }
+
+    .education {
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    .education-item {
+      margin-bottom: 20px;
+    }
+
+    .education-item span {
+      font-weight: bold;
+      color: #0a84ff;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <a href="index.html">首页</a>
-            <a href="ml-blog.html">机器学习博客</a>
-        </nav>
-        
-        <h1>欢迎来到我的个人网站</h1>
-        
-        <h2>关于我</h2>
-        <p>在我来到伯克利以后，我开始重新审视我在复旦的学习。我认为最关键的是那些数学课程，如数学分析、线性代数（虽然我很晚才学）、概率论与数理统计（我有幸上了付中昊老师开的这门课）。另外和数学比较相关的计量经济学内容也对我收获很大，比如统计学、计量经济学H，截面与面板数据分析H。</p>
-        <p>形成我价值观的课有两门，一门是孙立坚老师的货币银行学，一门是王永钦老师的经济学前沿专题H，当然，我也认为这门课可以改名为金融经济学H。</p>
-        <p>来到伯克利以后，我主要将精力投入到了技术的建设上。我上了比较有名的 CS61B、CS61C，数据结构、计算机结构相关课程。数据结构方面，我还上了算法课程来加深我对数据结构的理解。在计算机结构方面，我上了操作系统这门课来培养我对计算机的一种感觉，包括并发、同步、调度。另外，我还上了两门课深入了目前热门的话题，由 Jonathan Shewchuk 开设的机器学习与 Anant Sahai 开设的神经网络。除此之外，我还略微涉及了区块链金融，对这些东西如何工作有一些独特的理解。</p>
-        <p>这些课能给我带来什么，目前是不得而知的。然而我保持着一颗对未来的探索之心。</p>
+  <header>
+    <h1>Yunlong Zhou</h1>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="ml-blog.html">机器学习</a>
+      <a href="ml-blog.html">神经网络</a>
 
-        <h2>学习经历</h2>
-        <div class="education">
-            <div class="education-item">
-                <span>2021 - 2024</span>: 复旦大学经济学院<br>
-                主修经济学，深入学习数学、计量经济学及金融相关课程。
-            </div>
-            <div class="education-item">
-                <span>2024 - 2025</span>: 加州大学伯克利分校（UC Berkeley）访学<br>
-                专注于计算机科学，包括数据结构、算法、操作系统及机器学习。
-            </div>
-        </div>
+    </nav>
+  </header>
 
-        <footer>
-            <p>© Yunlong Zhou</p>
-        </footer>
+  <div class="container">
+    <!-- 📸 这里是你的头像图片位置 -->
+    <img src="your-photo.jpg" alt="Yunlong Zhou" class="profile-photo" />
+
+    <h2>关于我</h2>
+    <p>我来自复旦大学，复旦“自由而无用”的精神是我的底色。我从高中开始就受到复旦熏陶，中途走了一点歧路（是人生非常搞笑的经历），后来又入学复旦大学。复旦大学是我身上最深的印记。</p>
+    <p>我的世界观主要在复旦形成。形成我世界观的课有两门，一门是孙立坚老师的货币银行学，孙老师的课有许多有关政策的分析，非常实用。一门是王永钦老师的经济学前沿专题H，讲述了人类最难解决的不完全合约问题（也可以叫做承诺问题）及千百年以来人们对其的解决方案，如人们以前对于不还钱的人剁肉（威尼斯商人），后来发展成坐牢，现在主要解决不完全合约的方式成为了抵押品。人类对于不守承诺的惩罚越来越轻，对于双方的保护是越来越加强的。</p>
+    <p>在我来到伯克利以后，我开始重新审视我在复旦的学习。我认为最关键的是那些数学课程，如数学分析（我曾经认为数学分析在计算机中没有线性代数重要，直到我学习了Diffusion Model)、线性代数（虽然我很晚才学）、概率论与数理统计（我有幸上了洪永淼老师的弟子付中昊老师开的这门课）。另外和数学比较相关的计量经济学内容也对我收获很大，比如统计学、计量经济学H，截面与面板数据分析H。一开始上朱宏飞老师的计量经济学我认为不如洪永淼老师的课，但我后来发现朱老师能把复杂的问题简化，就像我一样。洪老师的计量课讲究数学推导多一点。</p>
+    <p>来到伯克利以后，我主要将精力投入到了技术的建设上。我上了比较有名的 CS61B（数据结构）、CS61C(计算机结构)相关课程。我原本没想上这些，伯克利这边不让选经济学研究生的课让我不得不选CS61B来保持我的学分数量(主要是本科经济学的课比复旦经院开的烂多了，我不忍心浪费我妈妈含辛茹苦赚的钱），于是我开始接触计算机，在伯克利一年之内上完了计算机学位所需要的核心课程（当然，我也没有学位拿，我正在考虑要不要读一个计算机硕士发送一个好点的信号）。我的计算机学习能分为两条线索，一条是算法路线，一条是计算机结构路线。算法路线的课程包括数据结构（了解算法的入门必修课），高效算法与不可解问题（有一个常见的误区认为中国象棋已经被算完了，但如果了解算法你就会知道这是不可能的，数据分析(DATA100)，机器学习（这两门课都讲解了我们如何用计算机在无理论的情况下对数据进行回归或者分类的方法），神经网络（颠覆人世界观的一门课程）。计算机结构方面我上了最基础的计算机结构课程和操作系统课程。计算机结构第一次教会了我如何写C语言，特别是指针的运用。我也了解到了什么是汇编语言，有什么作用。还略微涉及到了逻辑电路。操作系统课程我完成的不是很好，但是我依旧从中学习到了同步、异步、调度的思想。</p>
+    <p>我很享受学习的过程。学习是快乐的，特别是学习真正的知识。世界上有些虚假的知识只有等待时间来辨别真伪，但是我们可以通过基础的逻辑学来判别。</p>
+
+    <h2>学习经历</h2>
+    <div class="education">
+      <div class="education-item">
+        <span>2021 - 2024</span>: 复旦大学经济学院<br />
+        主修经济学，深入学习数学、计量经济学及金融相关课程。
+      </div>
+      <div class="education-item">
+        <span>2024 - 2025</span>: UC Berkeley 访学<br />
+        专注于计算机科学，包括数据结构、算法、操作系统及机器学习。
+      </div>
     </div>
+
+    <footer>
+      <p>© Yunlong Zhou</p>
+    </footer>
+  </div>
 </body>
 </html>
